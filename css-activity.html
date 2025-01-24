@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab Activity - css</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #menu, #header, #sidebar, #content, #footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #menu{
+            height: 10vh;
+            background-color: #bdb76b;
+        }
+        #header{
+            height: 20vh;
+            background-color:#00ffff;
+        }
+        #split{
+            display: flex;
+        }
+        #sidebar{
+            height: 60vh;
+            width: 30%;
+            background-color: #8a2be2;
+        }
+        #content{
+            height: 60vh;
+            width: 70%;
+            background-color: #d2691e;
+        }
+        #footer{
+            height: 10vh;
+            background-color: #ffd700;
+        }
+
+        @media (max-width: 767.98px){
+            #split{
+                display: block;
+            }
+            #sidebar, #content{
+                height: 30vh;
+                width: 100%;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="menu"><h1>Menu</h1></div>
+        <div id="header"><h1>Header</h1></div>
+        <div id="split">
+            <div id="sidebar"><h1>Sidebar</h1></div>
+            <div id="content"><h1>Content</h1></div>
+        </div>
+        <div id="footer"><h1>Footer</h1></div>
+    </div>
+    
+</body>
+</html>
